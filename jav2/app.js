@@ -6,10 +6,10 @@ let item5 = document.getElementById('item5')
 console.log(items)
 
 
-item5.style.backgroundColor = 'yellow'
-item5.style.color = 'white'
-item5.style.fontSize = '45px'
-item5.textContent = 'javascript'
+// item5.style.backgroundColor = 'yellow'
+// item5.style.color = 'white'
+// item5.style.fontSize = '45px'
+// item5.textContent = 'javascript'
 
 for (let i = 0; i < items.length; i++){
     items[i].style.color = 'green'
@@ -85,6 +85,66 @@ console.log(lists.parentElement)
 
 // newLi.textContent = 'new list item'
 // newLi.style.fontSize = '30px'
+
+
+const newDiv = document.createElement('div')
+newDiv.className = 'new'
+newDiv.textContent = 'a new div'
+
+console.log(newDiv)
+
+
+let container = document.querySelector('.container')
+let h1 = document.querySelector('.head')
+
+
+// container.insertBefore(newDiv, h1)
+// container.insertAdjacentElement("beforebegin", newDiv)
+// container.insertAdjacentElement("afterbegin", newDiv)
+// container.insertAdjacentElement("beforeend", newDiv)
+// container.insertAdjacentElement("afterend", newDiv)
+
+// item2.insertAdjacentElement("beforebegin", newDiv)
+// item2.insertAdjacentElement('afterbegin', newDiv)
+
+let newLi = document.createElement('li')
+newLi.style.backgroundColor = 'pink'
+newLi.textContent = 'a new element with pink background'
+newLi.style.fontSize = '40px'
+
+const item4 = document.querySelector('.item4')
+
+item4.insertAdjacentElement("afterend", newLi)
+
+
+let h2 = document.createElement('h2')
+h2.textContent = 'this is another heading'
+h2.style.border = '3px solid red'
+h2.style.color = 'white'
+h2.style.textAlign = 'center'
+
+let itemLister = document.querySelector('.head')
+
+itemLister.insertAdjacentElement('afterbegin', h2)
+
+
+
+
+
+let button = document.querySelector('.btn2')
+console.log(button)
+
+
+function click (){
+    console.log('hello')
+}
+
+button.addEventListener('click', function(){
+    console.log('click me')
+} )
+
+
+
 
 
 
