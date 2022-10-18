@@ -24,8 +24,8 @@ function calculate(){
     areaValue = area.value
     const VolumeVal = volume.value
 
-    area.value = ''
-    volume.value = ''
+    // area.value = ''
+    // volume.value = ''
 
     const res = areaValue * VolumeVal
     answer.innerHTML = res

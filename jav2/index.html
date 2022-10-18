@@ -15,7 +15,19 @@
 
         .item {
             font-size: 30px;
+            border: 1px solid black;
+            margin: 5px 0;
+            cursor: pointer;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
         }
+
+        .item:hover {
+            background-color: rgb(114, 223, 223);
+        }
+
+
 
 
         .items {
@@ -39,11 +51,12 @@
         .head {
             /* text-align: center; */
             background-color: green;
-            width: 100%;
+            width: 50%;
             margin: 0 auto;
             font-size: 35px;
             border: 1px solid black;
             margin-bottom: 30px;
+            display: inline-block;
         }
 
         p{
@@ -69,6 +82,12 @@
         .btn2:hover {
             background-color: aquamarine;
         }
+
+        #filter {
+            margin-left: 50px;
+            width: 40%;
+            padding: 15px 15px;
+        }
     </style>
 
 
@@ -77,7 +96,7 @@
 <body>
 
     <div class="container">
-        <h1 class="head">Item Lister</h1>
+        <h1 class="head">Item Lister</h1> <input type="text" id="filter" >
 
 
 
@@ -92,11 +111,13 @@
             <input type="text" value="item4" class="input" placeholder="item4">
         </div> -->
 
-        <div class="ul">
-            <li class="item">item1</li>
-            <li class="item" id="item2">item2</li>
-            <li class="item">item3</li>
-            <li class="item4">item4</li>
+        <div class="ul" id="item">
+            <li class="item" id="item1">item1 <button class="dbtn">X</button></li>
+            <li class="item" id="item">item2 <button class="dbtn">X</button></li>
+            <li class="item" id="item">item3 <button class="dbtn">X</button ></li>
+            <li class="item" id="item">item3 <button class="dbtn">X</button></li>
+
+            <!-- <li class="item4">item4</li> -->
             <!-- <li class="item" id="item5">item5</li> -->
         </div>
         <button class="btn2">Click me</button>
