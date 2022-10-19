@@ -180,15 +180,32 @@ let items = document.getElementById('item')
 
 // console.log(items)
 items.addEventListener('click', function(e){
-    if(e.target.classList.contains('dbtn')){
-        console.log(e.target)
-        let li = e.target.parentElement
-        items.removeChild(li)
-    }
+    // if(e.target.classList.contains('dbtn')){
+    //     console.log(e.target)
+    //     let li = e.target.parentElement
+    //     items.removeChild(li)
+    // }
 
-    // if (confirm('are you sure')){
-    // items.removeChild(e.target)
-    // }   
+    if (confirm('are you sure')){
+    items.removeChild(e.target)
+    }   
+})
+
+
+let btn2 = document.querySelector('.btn2')
+let newInput = document.getElementById('new')
+
+btn2.addEventListener('click', function(){
+    let element2 = document.createElement('h2')
+    let newInputValue =newInput.value
+
+    element2.textContent = newInputValue
+    element2.style.textAlign='center'
+    element2.style.backgroundColor= 'pink'
+
+    let item3 = document.querySelector('#item3')
+
+    item3.insertAdjacentElement("afterend", element2)
 })
 
 
