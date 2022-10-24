@@ -195,7 +195,8 @@ items.addEventListener('click', function(e){
 let btn2 = document.querySelector('.btn2')
 let newInput = document.getElementById('new')
 
-btn2.addEventListener('click', function(){
+btn2.addEventListener('mouseenter', function(e){
+    console.log(e)
     let element2 = document.createElement('h2')
     let newInputValue =newInput.value
 
@@ -209,7 +210,12 @@ btn2.addEventListener('click', function(){
 })
 
 
-let filter = document.getElementById('filter')
+let filterInput = document.getElementById('filter')
+
+filterInput.addEventListener('keyup', function(e){
+    const text = e.target.value.toLowerCase()
+    console.log(text)
+})
 
 
 
