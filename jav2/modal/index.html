@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 95%;
+            border: 1px solid red;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .modal {
+            width: 45%;
+            /* margin: 50vh auto; */
+            text-align: center;
+        }
+
+        .modal::backdrop{
+            background-color: rgb(41, 39, 39);
+            opacity: 0.8;
+        }
+
+        .form {
+            width: 60%;
+            border: 1px solid blue;
+            background-color: gray;
+            text-align: center;
+        }
+
+        .form::backdrop{
+            background-color: rgb(131, 209, 131);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperior
+            es, atque nulla excepturi non consectetur nostrum quasi corporis impedit neque fugit dol
+            or nam dicta nihi
+            lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus sint temporibus ab molestiae voluptatum quibusdam explicabo ratione eius, repellat minima exercitationem totam vel incidunt illo culpa dolores a animi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint corporis non magnam nostrum iste esse, minima minus id facere accusamus, rem laborum ipsum blanditiis? Ad nam quasi quisquam fugit iste.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repellat explicabo eaque in porro est non omnis, et ut cum delectus quia dolores obcaecati at, sed quidem facilis laudantium eligendi?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quas, molestias autem excepturi quaerat, ratione veniam odit sint illo non est. Laudantium, quisquam totam mollitia iusto doloribus temporibus magni adipisci.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius culpa quidem rerum officia suscipit. At inventore fuga qui perferendis et, atque eveniet molestias ullam labore ducimus, voluptatem sunt, odio ex.
+             l cum necessitatibus? Soluta, minima facilis!
+        </h1>
+        <button class="open">open modal</button>
+        <button class="open-form-modal">open Form modal</button>
+
+
+        <dialog class="modal" id="modal">
+            <h2>a modal</h2>
+            <p>a modal that pops up and blurs out tghe background whenever you click openmodal</p>
+            <button class="close">close modal</button>
+
+        </dialog>
+
+
+        
+    </div>
+
+
+    <dialog class="form" id="form">
+        <form action="" method="dialog">
+            <h2>
+                tur adipisicing elit. Sint corporis non magnam nostrum iste esse, minima minus id facere accusamus, rem laborum ipsum blanditiis? Ad nam quasi quisquam fugit iste.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repellat explicabo eaque in porro est non omnis, et ut cum delectus quia dolores obcaecati at, sed quidem facilis laudantium eligendi?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quas, molestias autem excepturi quaerat, ratione veniam odit sint illo non est. Laudantium, quisquam totam mollitia iusto doloribus temporibus magni adipisci.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius culpa quidem rerum officia suscipit. At inventore fuga q
+            </h2>
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+            <button id="form-btn" type="submit">close form</button>
+        </form>    
+    </dialog>
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
